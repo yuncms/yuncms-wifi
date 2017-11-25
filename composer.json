@@ -1,0 +1,49 @@
+{
+  "name": "yuncms/yuncms-wifi",
+  "description": "The wifi module for yuncms.",
+  "keywords": [
+    "yii",
+    "yii2-wifi",
+    "wifi"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "require": {
+    "yiisoft/yii2": "~2.0.6",
+    "xutl/yii2-payment": "~1.0",
+    "endroid/qrcode": "~1.0",
+    "whichbrowser/parser": "~2.0",
+    "yuncms/yuncms-user": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "yuncms\\wifi\\": ""
+    }
+  },
+  "extra": {
+    "yuncms": {
+      "name": "wifi",
+      "i18n": {
+        "class": "yii\\i18n\\PhpMessageSource",
+        "sourceLanguage": "en-US",
+        "basePath": "@yuncms/wifi/messages"
+      },
+      "migrationNamespace": "yuncms\\wifi\\migrations",
+      "backend": {
+        "class": "yuncms\\wifi\\backend\\Module"
+      },
+      "frontend": {
+        "class": "yuncms\\wifi\\frontend\\Module"
+      }
+    },
+    "branch-alias": {
+      "dev-master": "2.0.0-dev"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
+}
