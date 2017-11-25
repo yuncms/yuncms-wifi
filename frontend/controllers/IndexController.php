@@ -307,7 +307,7 @@ class IndexController extends Controller
         $router->get_router_info_by_mac($params);
 
 
-        echo 'Pong';
+        return 'Pong';
     }
 
     /**
