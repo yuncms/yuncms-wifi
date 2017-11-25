@@ -15,7 +15,7 @@ class M171125133100Create_wifi_router_table extends Migration
             $tableOptions = 'CHARACTER SET utf8 COLLATE utf8_unicode_ci ENGINE=InnoDB';
         }
         $this->createTable('{{%wifi_router}}', [
-            'id' => $this->primaryKey()->unsigned()->comment('Id'),
+            'id' => $this->primaryKey()->unsigned()->comment('Gateway Id'),
             'user_id' => $this->integer()->unsigned()->comment('User Id'),
             'gw_mac' => $this->string()->comment('Gateway Mac'),
             'gw_address' => $this->string()->comment('Gateway Address'),
